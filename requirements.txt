@@ -1,0 +1,13 @@
+# Python dependencies for the recon tools (recon_wizard.py, recon_menu.py, recon.py)
+# Install with:  pip install -r requirements.txt     (or just run ./install.sh)
+
+jinja2>=3.1          # REQUIRED  - HTML report engine
+python-docx>=1.1     # Word (.docx) reports
+reportlab>=4.0       # PDF reports (pure Python, no system libraries)
+
+# Optional: nicer HTML-to-PDF output. Needs the Pango system library,
+# so it is not installed by default. Use:  ./install.sh --weasyprint
+# weasyprint>=60
+
+# Not pip packages - these are installed by install.sh with your system package manager:
+#   nmap, nikto, gobuster, a directory wordlist (dirb), python3 >= 3.10
